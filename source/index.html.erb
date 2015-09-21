@@ -1,23 +1,15 @@
 ---
 title: Justin Crawford
+subhead: Technical Leader | Solution Designer | Web developer | Product Engineer
+blurb: For 20 years I have built things on the web on the server side and the browser side as an engineer, a project manager, a product manager, and other things in between.
 ---
 
 <div class="main">
+
     <header>
-      <h1>Justin Crawford</h1>
-      <h2>Web Developer</h2>
+      <h1><%= current_page.data.title %></title>
+      <h2><%= current_page.data.subhead %></h2>
     </header>
 
-    <div>Every time I build a static page I think, "wow, I should automate this." So while I work through the prework, I may take a few extra steps such as...
-      <ul>
-        <li class="checked">Install ruby 2.1.5</li>
-        <li class="checked">Install the <a href="http://middlemanapp.com">Middleman gem</a></li>
-        <ul><li class="checked">Oh, I guess I'll need bundler?</li></ul>
-        <li>Templatize the page</li>
-        <li>Put content into yaml/markdown</li>
-        <li>Build it locally</li>
-        <li>Store the code in GitHub</li>
-        <li>Copy the built site to a server somewhere (I use Digital Ocean, but maybe BitBalloon will be easier since I won't have to mess with httpd config...).</li>
-      </ul>
-    </div>
+    <div class="blurb"><%= current_page.data.blurb %></div>
 </div>
