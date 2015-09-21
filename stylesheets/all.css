@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  background: url("/images/background.jpg") center center no-repeat fixed;
+  background: url("images/background.jpg") center center no-repeat fixed;
   background-size: cover;
   color: #fff;
   display: flex;
