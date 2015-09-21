@@ -1,15 +1,21 @@
 ---
 title: Justin Crawford
 subhead: Technical Leader | Solution Designer | Web developer | Product Engineer
-blurb: For 20 years I have built things on the web on the server side and the browser side as an engineer, a project manager, a product manager, and other things in between.
+blurb: For 20 years I have built things on the web. On the server side and the browser side. As an engineer, a project manager, a product manager, and roles in between.
 ---
 
-<div class="main">
+<div class="box">
+  <header>
+    <h1><%= current_page.data.title %></title>
+    <h2><%= current_page.data.subhead %></h2>
+  </header>
 
-    <header>
-      <h1><%= current_page.data.title %></title>
-      <h2><%= current_page.data.subhead %></h2>
-    </header>
+  <div class="blurb"><%= current_page.data.blurb %></div>
 
-    <div class="blurb"><%= current_page.data.blurb %></div>
+  <nav class="external">
+    <a title="GitHub" href="https://github.com/hoosteeno"><i class="fa fa-github-square"><span>GitHub</span></i></a>
+    <a title="Twitter" href="https://twitter.com/hoosteeno"><i class="fa fa-twitter-square"><span>Twitter</span></i></a>
+    <a title="Stack Overflow"href="https://careers.stackoverflow.com/hoosteeno"><i class="fa fa-stack-overflow"><span>Stack Overflow</span></i></a>
+  </nav>
+
 </div>

@@ -1,9 +1,20 @@
 @charset "utf-8";
 
+html {
+  height: 100%;
+  display: flex;
+  flex: 1;
+}
+
 body {
   background: url("/images/background.jpg") center center no-repeat fixed;
   background-size: cover;
   color: #fff;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
 }
 
 a, a:hover, a:visited {
@@ -11,15 +22,16 @@ a, a:hover, a:visited {
   text-decoration: underline;
 }
 
-.main {
+.box {
   width: 40%;
   max-width: 50ch;
-  min-width: 20ch;
-  margin: 10% auto auto auto;
+  min-width: 30ch;
   padding: 5ch;
   border-top: 5px solid rgba(129, 146, 174, .4);
   border-bottom: 5px solid rgba(129, 146, 174, .4);
   background: rgba(35, 50, 50, .8);
+  max-width: 50%;
+  overflow: auto;
 }
 
 header {
@@ -44,11 +56,28 @@ h2 {
   text-align: center;
 }
 
+.external {
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.external i {
+  padding: .75rem;
+  transition: color .15s;
+}
+
+.external i span {
+  display: none;
+}
+
+.external i:hover {
+  color: rgb(171, 170, 175);
+  transition: color .15s;
+}
+
 @media screen and (max-width: 80ch) {
   h1{ font-size: 2rem; }
   h2{ font-size: .6rem; }
+  .external{ font-size: 2rem; }
 }
 
-@media screen and (max-height: 20rem) {
-  .main { margin: 1rem auto auto auto; }
-}
