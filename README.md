@@ -1,1 +1,1 @@
-A repo for the prework for Firehouse.
+A middleman site that generates a splash page.
