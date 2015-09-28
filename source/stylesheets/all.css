@@ -77,7 +77,6 @@ h2 {
 
 @media screen and (max-width: 80ch) {
   h1{ font-size: 2rem; }
-  h2{ font-size: .6rem; }
   .external{ font-size: 2rem; }
 }
 
